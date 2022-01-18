@@ -1,6 +1,11 @@
 #include <iostream>
+#include <string>
+#include <iostream>
+#include <sstream>
+#include "Source/Path.h"
+#include <fstream>
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+    Path path;
+    cout << path.graphStops().graphSize();
 }

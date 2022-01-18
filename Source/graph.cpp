@@ -12,3 +12,7 @@ void Graph::addEdge(int src, int dest, int weight) {
     if (!hasDir) nodes[dest].adj.push_back({src, weight});
 }
 
+
+int Graph::graphSize() {
+    return nodes.size();
+}
