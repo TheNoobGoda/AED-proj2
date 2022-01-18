@@ -7,5 +7,7 @@
 
 int main() {
     Path path;
-    cout << path.graphStops().graphSize();
+    path.mapping();
+    cout << path.getMapSize();
+
 }
