@@ -7,10 +7,11 @@
 #include "graph.h"
 #include "Stop.h"
 #include <map>
+#include <vector>
 
 
 class Path {
-    map<int,list<string>> mapStops;
+    map<int,vector<string>> mapStops;
 
 public:
     Path()=default;
@@ -18,7 +19,8 @@ public:
     static Graph graphStops();
     void mapping();
     int getMapSize();
-    list<string> stringSplit(string n);
+    vector<string> getStop(int n);
+    vector<string> stringSplit(string n,char c);
 
 
 

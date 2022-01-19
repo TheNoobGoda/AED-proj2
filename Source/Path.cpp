@@ -22,13 +22,13 @@ void Path::mapping() {
     int num=0;
     string n;
     ifstream f("../Source/dataset/stops.csv");
-    list<string>l;
+    vector<string> l ={};
     while(f.is_open()){
         getline(f,n);
         while(f.peek() != EOF){
             getline(f,n);
-            l = stringSplit(n);
-            mapStops.insert(pair<int,list<string>>(num,l));
+            l = stringSplit(n,',');
+            mapStops.insert(pair<int,vector<string>>(num,l));
             num ++;
         }
         f.close();
@@ -39,20 +39,22 @@ int Path::getMapSize() {
     return mapStops.size();
 }
 
-list<string> Path::stringSplit(string n) {
-    list<string> l;
-    char c = 'q';
-    int num = 0;
-    for (int i=0;i<5;i++){
-        c=n.at(num);
-        c=n.at(num);
-        string str;
-        while(c !=','){
-            str.push_back(c);
-            num++;
-            c=n.at(num);
+vector<string> Path::stringSplit(string n,char c) {
+    string temp ="";
+    vector<string> l;
+
+    for(int i=0; i<(int)n.size(); i++){
+        if(n[i] != c){
+            temp += n[i];
         }
-        l.push_back(str);
-        num++;
+        else{
+            l.push_back(temp);
+            temp = "";
+        }
     }
+    return l;
+}
+
+vector<string> Path::getStop(int n) {
+    return mapStops.at(n);
 }
