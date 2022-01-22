@@ -58,3 +58,15 @@ vector<string> Path::stringSplit(string n,char c) {
 vector<string> Path::getStop(int n) {
     return mapStops.at(n);
 }
+
+Graph Path::lineGraph(string str) {
+    ifstream f (str);
+    string n ;
+    while (f.is_open()){
+        getline(f,n);
+        Graph g(int(n));
+        while (f.peek() !=EOF){
+
+        }
+    }
+}
