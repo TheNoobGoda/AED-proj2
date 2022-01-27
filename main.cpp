@@ -6,8 +6,7 @@
 #include <fstream>
 
 int main() {
-    Path path;
-    path.graphStops();
-    cout << path.getMapSize()<< "\n" << path.getStop(0).at(0) << "\n" << path.getGraph().getEdge();
+    //Path path;
+    //std::cout << path.getGraph().dijkstra(100,200);
 
 }

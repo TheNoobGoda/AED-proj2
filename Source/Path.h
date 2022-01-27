@@ -12,9 +12,10 @@
 
 class Path {
     map<int,vector<string>> mapStops;
+    static Graph graphStop;
 
 public:
-    Path()=default;
+    //Path();
     Graph getGraph();
     map<int,vector<string>> getMapStops();
     Graph graphStops();
@@ -24,6 +25,7 @@ public:
     vector<string> stringSplit(string n,char c);
 
     static double haversine(double lat1, double lon1,double lat2, double lon2);
+    void bfs(int v);
 
 
 

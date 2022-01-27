@@ -19,11 +19,24 @@ class Graph {
 
     struct Node{
         list<Edge> adj;
+        bool visited;
+        double dist;
+        int origin;
+        bool operator<(const Node node) const{
+            if (this->dist==node.dist){
+                return true;
+            }else if(this->dist<node.dist){
+                return true;
+            }else{
+                return false;
+            }
+        }
     };
 
     int size;
     bool hasDir;
     vector<Node> nodes;
+    vector<Node> djk;
 
 public:
     Graph(int nodes, bool dir = false);
@@ -31,6 +44,8 @@ public:
     void addEdge(int src, int dest, string line, double weight = 1);
     int graphSize();
     int getEdge();
+    void bfs(int v);
+    int dijkstra(int a,int b);
 
 };
 

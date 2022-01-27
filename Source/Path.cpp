@@ -10,8 +10,13 @@
 
 using namespace std;
 
+//Path::Path() {
+//    //this->graphStop = graphStops();
+//    mapping();
+//}
+
 Graph Path::graphStops() {
-    mapping();
+
     Graph stops(2487,true);
     string line;
     int src;
@@ -904,5 +909,10 @@ double Path::haversine(double lat1, double lon1, double lat2, double lon2) {
     double rad = 6371;
     double c = 2 * asin(sqrt(a));
     return rad * c;
+}
+
+void Path::bfs(int v) {
+
+
 }
 
