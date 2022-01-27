@@ -13,8 +13,8 @@ using namespace std;
 class Graph {
     struct Edge {
         int dest;
-        int weight;
-        int line;
+        double weight;
+        string line;
     };
 
     struct Node{
@@ -28,7 +28,7 @@ class Graph {
 public:
     Graph(int nodes, bool dir = false);
 
-    void addEdge(int src, int dest, int line, int weight = 1);
+    void addEdge(int src, int dest, string line, double weight = 1);
     int graphSize();
     int getEdge();
 

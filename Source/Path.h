@@ -23,6 +23,8 @@ public:
     vector<string> getStop(int n);
     vector<string> stringSplit(string n,char c);
 
+    static double haversine(double lat1, double lon1,double lat2, double lon2);
+
 
 
 };
