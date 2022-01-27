@@ -7,7 +7,7 @@
 
 int main() {
     Path path;
-    path.mapping();
-    cout << path.getMapSize()<< "\n" << path.getStop(0).at(1);
+    path.graphStops();
+    cout << path.getMapSize()<< "\n" << path.getStop(0).at(0) << "\n" << path.getGraph().getEdge();
 
 }

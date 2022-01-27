@@ -16,8 +16,8 @@ class Path {
 public:
     Path()=default;
     Graph getGraph();
-    Graph lineGraph(string str);
-    static Graph graphStops();
+    map<int,vector<string>> getMapStops();
+    Graph graphStops();
     void mapping();
     int getMapSize();
     vector<string> getStop(int n);

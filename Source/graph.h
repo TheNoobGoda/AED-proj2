@@ -14,6 +14,7 @@ class Graph {
     struct Edge {
         int dest;
         int weight;
+        int line;
     };
 
     struct Node{
@@ -27,8 +28,9 @@ class Graph {
 public:
     Graph(int nodes, bool dir = false);
 
-    void addEdge(int src, int dest, int weight = 1);
+    void addEdge(int src, int dest, int line, int weight = 1);
     int graphSize();
+    int getEdge();
 
 };
 
