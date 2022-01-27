@@ -42,14 +42,10 @@ Graph Path::graphStops() {
                         break;
                     }
                 }
-                int n = stoi(mapStops.at(src).at(3));
-                double n1 = (double) n;
-                n = stoi(mapStops.at(src).at(3));
-                double n2 = (double) n;
-                n = stoi(mapStops.at(src).at(3));
-                double n3 = (double) n;
-                n = stoi(mapStops.at(src).at(3));
-                double n4 = (double) n;
+                double n1 = atof(mapStops.at(src).at(3).c_str());
+                double n2 = atof(mapStops.at(src).at(4).c_str());
+                double n3 = atof(mapStops.at(dest).at(3).c_str());
+                double n4 = atof(mapStops.at(dest).at(4).c_str());
                 double weight = haversine(n1,n2,n3,n4);
                 stops.addEdge(src,dest, to_string(i)+"_0",weight);
                 src = dest;
@@ -76,14 +72,10 @@ Graph Path::graphStops() {
                         break;
                     }
                 }
-                int n = stoi(mapStops.at(src).at(3));
-                double n1 = (double) n;
-                n = stoi(mapStops.at(src).at(3));
-                double n2 = (double) n;
-                n = stoi(mapStops.at(src).at(3));
-                double n3 = (double) n;
-                n = stoi(mapStops.at(src).at(3));
-                double n4 = (double) n;
+                double n1 = atof(mapStops.at(src).at(3).c_str());
+                double n2 = atof(mapStops.at(src).at(4).c_str());
+                double n3 = atof(mapStops.at(dest).at(3).c_str());
+                double n4 = atof(mapStops.at(dest).at(4).c_str());
                 double weight = haversine(n1,n2,n3,n4);
                 stops.addEdge(src,dest,to_string(i)+"_1",weight);
                 src = dest;
@@ -111,14 +103,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"1M_0",weight);
             src = dest;
@@ -145,14 +133,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"1M_1",weight);
             src = dest;
@@ -179,14 +163,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"3M_0",weight);
             src = dest;
@@ -212,14 +192,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"3M_1",weight);
             src = dest;
@@ -246,14 +222,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"4M_0",weight);
             src = dest;
@@ -280,14 +252,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"4M_1",weight);
             src = dest;
@@ -314,14 +282,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"5M_0",weight);
             src = dest;
@@ -348,14 +312,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"5M_1",weight);
             src = dest;
@@ -382,14 +342,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"7M_0",weight);
             src = dest;
@@ -416,14 +372,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"7M_1",weight);
             src = dest;
@@ -450,14 +402,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"8M_0",weight);
             src = dest;
@@ -484,14 +432,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"8M_1",weight);
             src = dest;
@@ -518,14 +462,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"9M_0",weight);
             src = dest;
@@ -552,14 +492,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"9M_1",weight);
             src = dest;
@@ -586,14 +522,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"10M_0",weight);
             src = dest;
@@ -620,14 +552,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"10M_1",weight);
             src = dest;
@@ -654,14 +582,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"11M_0",weight);
             src = dest;
@@ -688,14 +612,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"11M_1",weight);
             src = dest;
@@ -722,14 +642,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"12M_0",weight);
             src = dest;
@@ -756,14 +672,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"12M_1",weight);
             src = dest;
@@ -790,14 +702,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"13M_0",weight);
             src = dest;
@@ -824,14 +732,10 @@ Graph Path::graphStops() {
                     break;
                 }
             }
-            int n = stoi(mapStops.at(src).at(3));
-            double n1 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n2 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n3 = (double) n;
-            n = stoi(mapStops.at(src).at(3));
-            double n4 = (double) n;
+            double n1 = atof(mapStops.at(src).at(3).c_str());
+            double n2 = atof(mapStops.at(src).at(4).c_str());
+            double n3 = atof(mapStops.at(dest).at(3).c_str());
+            double n4 = atof(mapStops.at(dest).at(4).c_str());
             double weight = haversine(n1,n2,n3,n4);
             stops.addEdge(src,dest,"13M_1",weight);
             src = dest;
@@ -880,7 +784,9 @@ vector<string> Path::stringSplit(string n,char c) {
             l.push_back(temp);
             temp = "";
         }
+
     }
+    l.push_back(temp);
     return l;
 }
 
@@ -912,7 +818,18 @@ double Path::haversine(double lat1, double lon1, double lat2, double lon2) {
 }
 
 void Path::bfs(int v) {
-
-
 }
 
+string Path::getClosestStop(double lat, double longi) {
+    double dist = haversine(lat,longi,atof(mapStops.at(0).at(3).c_str()),atof(mapStops.at(0).at(4).c_str()));
+    int n = 0;
+    for (int i = 1;i<mapStops.size();i++){
+        double dist2 = haversine(lat,longi,atof(mapStops.at(i).at(3).c_str()),atof(mapStops.at(i).at(4).c_str()));
+        if (dist>dist2){
+            dist = dist2;
+            n =i;
+        }
+    }
+
+    return mapStops.at(n).at(0);
+}
