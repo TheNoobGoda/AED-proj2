@@ -31,6 +31,13 @@ class Graph {
                 return false;
             }
         }
+        bool operator==(const Node node) const{
+            if (this->dist==node.dist && this->visited==node.visited && this->origin==node.origin){
+                return true;
+            }else{
+                return false;
+            }
+        }
     };
 
     int size;
