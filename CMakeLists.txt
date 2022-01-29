@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 file(GLOB_RECURSE CLASSES RELATIVE ${CMAKE_SOURCE_DIR} "Source/*.cpp" "Source/*.h")
 
-add_executable(AED_proj2 main.cpp ${CLASSES} Source/Path.cpp Source/Path.h)
+add_executable(AED_proj2 main.cpp ${CLASSES} Source/Path.cpp Source/Path.h Source/Menu.h Source/Menu.cpp)

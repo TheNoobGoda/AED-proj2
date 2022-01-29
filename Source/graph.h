@@ -6,6 +6,7 @@ using namespace std;
 #ifndef AED_PROJ2_GRAPH_H
 #define AED_PROJ2_GRAPH_H
 #include <string>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -47,6 +48,7 @@ class Graph {
 
 public:
     Graph(int nodes, bool dir = false);
+    Graph()=default;
 
     void addEdge(int src, int dest, string line, double weight = 1);
     int graphSize();
