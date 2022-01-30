@@ -23,6 +23,8 @@ class Graph {
         bool visited;
         double dist;
         int origin;
+        string line;
+        bool lineb;
         bool operator<(const Node node) const{
             if (this->dist==node.dist){
                 return true;
@@ -55,7 +57,9 @@ public:
     int getEdge();
     void bfs(int v);
     int dijkstra(int a,int b);
+    int leastChange(int a,int b);
 
+    vector<int> sortVector(vector<int> v);
 };
 
 

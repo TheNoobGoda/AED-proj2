@@ -29,6 +29,8 @@ public:
 
     string getClosestStop(double lat,double longi);
 
+    int leastChangesPath();
+
 
 
 };

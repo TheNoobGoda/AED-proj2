@@ -833,3 +833,11 @@ string Path::getClosestStop(double lat, double longi) {
 
     return mapStops.at(n).at(0);
 }
+
+int Path::leastChangesPath() {
+    mapping();
+    Graph stops = graphStops();
+    for (int i=0;i<stops.graphSize();i++){
+
+    }
+}
