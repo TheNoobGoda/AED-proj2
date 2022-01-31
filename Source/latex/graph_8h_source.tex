@@ -1,0 +1,81 @@
+\hypertarget{graph_8h_source}{}\doxysection{graph.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <list>}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#ifndef AED\_PROJ2\_GRAPH\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#define AED\_PROJ2\_GRAPH\_H}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <bits/stdc++.h>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{keyword}{class }\mbox{\hyperlink{class_graph}{Graph}} \{}
+\DoxyCodeLine{15     \textcolor{keyword}{struct }Edge \{}
+\DoxyCodeLine{16         \textcolor{keywordtype}{int} dest;}
+\DoxyCodeLine{17         \textcolor{keywordtype}{double} weight;}
+\DoxyCodeLine{18         \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{19     \};}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keyword}{struct }Node\{}
+\DoxyCodeLine{22         list<Edge> adj;}
+\DoxyCodeLine{23         \textcolor{keywordtype}{bool} visited;}
+\DoxyCodeLine{24         \textcolor{keywordtype}{double} dist;}
+\DoxyCodeLine{25         \textcolor{keywordtype}{int} origin;}
+\DoxyCodeLine{26         \textcolor{keywordtype}{string} line;}
+\DoxyCodeLine{27         \textcolor{keywordtype}{bool} lineb;}
+\DoxyCodeLine{28         \textcolor{keywordtype}{string} zone;}
+\DoxyCodeLine{29         \textcolor{keywordtype}{bool} zoneb;}
+\DoxyCodeLine{30         \textcolor{keywordtype}{bool} operator<(\textcolor{keyword}{const} Node node)\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{31             \textcolor{keywordflow}{if} (this-\/>dist==node.dist)\{}
+\DoxyCodeLine{32                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{33             \}\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(this-\/>dist<node.dist)\{}
+\DoxyCodeLine{34                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{35             \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{36                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{37             \}}
+\DoxyCodeLine{38         \}}
+\DoxyCodeLine{39         \textcolor{keywordtype}{bool} operator==(\textcolor{keyword}{const} Node node)\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{40             \textcolor{keywordflow}{if} (this-\/>dist==node.dist \&\& this-\/>visited==node.visited \&\& this-\/>origin==node.origin)\{}
+\DoxyCodeLine{41                 \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{42             \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{43                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{44             \}}
+\DoxyCodeLine{45         \}}
+\DoxyCodeLine{46     \};}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{keywordtype}{int} size;}
+\DoxyCodeLine{49     \textcolor{keywordtype}{bool} hasDir;}
+\DoxyCodeLine{50     vector<Node> nodes;}
+\DoxyCodeLine{51     vector<Node> djk;}
+\DoxyCodeLine{52 }
+\DoxyCodeLine{53 \textcolor{keyword}{public}:}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{56     \mbox{\hyperlink{class_graph}{Graph}}(\textcolor{keywordtype}{int} nodes, \textcolor{keywordtype}{bool} dir = \textcolor{keyword}{false});}
+\DoxyCodeLine{57     \mbox{\hyperlink{class_graph}{Graph}}()=\textcolor{keywordflow}{default};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{60     vector<Node> \mbox{\hyperlink{class_graph_a89b0fd5632022b15231c6e755d7f8039}{getNodes}}()\{}
+\DoxyCodeLine{61         \textcolor{keywordflow}{return} nodes;}
+\DoxyCodeLine{62     \}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graph_a63227de486980c93ed40fb1ff5ebfee1}{addEdge}}(\textcolor{keywordtype}{int} src, \textcolor{keywordtype}{int} dest, \textcolor{keywordtype}{string} line, \textcolor{keywordtype}{double} weight = 1);}
+\DoxyCodeLine{67     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_graph_add1db2dca9e808b1e3003a3d6340184c}{graphSize}}();}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{70     vector<int> \mbox{\hyperlink{class_graph_aa5939d1f694f4cb00911f70b474b4dab}{bfs}}(\textcolor{keywordtype}{int} v,\textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{72     vector<int> \mbox{\hyperlink{class_graph_af262e04ff1c8b75c720f6534fcb12b8d}{dijkstra}}(\textcolor{keywordtype}{int} a,\textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{74     vector<int> \mbox{\hyperlink{class_graph_ac9480dae7745b203686ef78bc5e39691}{leastChange}}(\textcolor{keywordtype}{int} a,\textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{76     vector<int> \mbox{\hyperlink{class_graph_ac23aec79c6fd1ae1417d1d6babc3cbf9}{leastZones}}(\textcolor{keywordtype}{int} a,\textcolor{keywordtype}{int} b);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{79     vector<int> \mbox{\hyperlink{class_graph_ad5e4b3b6e7c77e34554b826175b54de8}{sortVector}}(vector<int> v);}
+\DoxyCodeLine{81     vector<int> \mbox{\hyperlink{class_graph_aaaaf7374e7a7f66ee5a4d787d66bda6e}{sortVector2}}(vector<int> v);}
+\DoxyCodeLine{83     vector<int> \mbox{\hyperlink{class_graph_a24951f9276ce58e402658986148c4887}{sortVector3}}(vector<int> v);}
+\DoxyCodeLine{84 \};}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AED\_PROJ2\_GRAPH\_H}}
+
+\end{DoxyCode}

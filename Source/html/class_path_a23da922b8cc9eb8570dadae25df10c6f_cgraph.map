@@ -1,0 +1,4 @@
+<map id="Path::getClosestStop" name="Path::getClosestStop">
+<area shape="rect" id="node1" title="Funcao que recebe coordenadas e devolve a paragem mais proxima dessas coordenadas." alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node2" href="$class_path.html#a0b1c152f678fbdae81357a8df67dded4" title="Funçao com o algoritmo de haversine calcular a distancia entre dois pontos usando as suas latitudes e..." alt="" coords="200,5,311,32"/>
+</map>

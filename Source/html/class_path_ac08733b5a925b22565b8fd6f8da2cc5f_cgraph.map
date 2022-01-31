@@ -1,0 +1,4 @@
+<map id="Path::mapping" name="Path::mapping">
+<area shape="rect" id="node1" title="Mapeia todas as paragens a um numero de identificacao usando um mapa." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$class_path.html#af7c550cffaa44cede4dd8413b20b5239" title="Funcao auxiliar que recebe uma string e um char e divide a string num vetor de strings usando como di..." alt="" coords="160,5,275,32"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="Path::Path" name="Path::Path">
+<area shape="rect" id="node1" title="construtor do Path ativa as funcoes getGraph e mapping guardando os sues returns respetivamente nas v..." alt="" coords="5,81,89,108"/>
+<area shape="rect" id="node2" href="$class_path.html#ad3b56a60dabdaa87703d632b380e708d" title="Constroi o grafo com todas as paragens e as suas ligações." alt="" coords="137,56,260,83"/>
+<area shape="rect" id="node5" href="$class_path.html#ac08733b5a925b22565b8fd6f8da2cc5f" title="Mapeia todas as paragens a um numero de identificacao usando um mapa." alt="" coords="145,107,252,133"/>
+<area shape="rect" id="node3" href="$class_graph.html#a63227de486980c93ed40fb1ff5ebfee1" title="Adiciona uma edge ao grafo desde a source ate a destination, recebendo tambem que linha liga essas du..." alt="" coords="308,5,424,32"/>
+<area shape="rect" id="node4" href="$class_path.html#a0b1c152f678fbdae81357a8df67dded4" title="Funçao com o algoritmo de haversine calcular a distancia entre dois pontos usando as suas latitudes e..." alt="" coords="311,56,421,83"/>
+<area shape="rect" id="node6" href="$class_path.html#af7c550cffaa44cede4dd8413b20b5239" title="Funcao auxiliar que recebe uma string e um char e divide a string num vetor de strings usando como di..." alt="" coords="309,107,423,133"/>
+</map>

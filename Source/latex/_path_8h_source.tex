@@ -1,0 +1,43 @@
+\hypertarget{_path_8h_source}{}\doxysection{Path.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{//}}
+\DoxyCodeLine{2 \textcolor{comment}{// Created by GODA on 18/01/2022.}}
+\DoxyCodeLine{3 \textcolor{comment}{//}}
+\DoxyCodeLine{4 }
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#ifndef AED\_PROJ2\_PATH\_H}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#define AED\_PROJ2\_PATH\_H}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}graph.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <map>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{class_path}{Path}} \{}
+\DoxyCodeLine{13     map<int,vector<string>> mapStops;}
+\DoxyCodeLine{14     \mbox{\hyperlink{class_graph}{Graph}} graphStop;}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{keyword}{public}:}
+\DoxyCodeLine{18     \mbox{\hyperlink{class_path_af26cfab021ddf49af73da3b2beca85ac}{Path}}();}
+\DoxyCodeLine{20     \mbox{\hyperlink{class_graph}{Graph}} \mbox{\hyperlink{class_path_a805ffe78aed0d6c275f402b8379727e8}{getGraph}}();}
+\DoxyCodeLine{22     map<int,vector<string>> \mbox{\hyperlink{class_path_a343c3786dc6760a33f65e25f59a39c81}{getMapStops}}();}
+\DoxyCodeLine{24     \mbox{\hyperlink{class_graph}{Graph}} \mbox{\hyperlink{class_path_ad3b56a60dabdaa87703d632b380e708d}{graphStops}}();}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_path_ac08733b5a925b22565b8fd6f8da2cc5f}{mapping}}();}
+\DoxyCodeLine{28     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_path_ace42aec34a95562120643b30cca81ea3}{getMapSize}}();}
+\DoxyCodeLine{30     vector<string> \mbox{\hyperlink{class_path_a818d2b46db7f7d590e2dc8fcf9b83f2a}{getStop}}(\textcolor{keywordtype}{int} n);}
+\DoxyCodeLine{32     vector<string> \mbox{\hyperlink{class_path_af7c550cffaa44cede4dd8413b20b5239}{stringSplit}}(\textcolor{keywordtype}{string} n,\textcolor{keywordtype}{char} c);}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{35     \textcolor{keyword}{static} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_path_a0b1c152f678fbdae81357a8df67dded4}{haversine}}(\textcolor{keywordtype}{double} lat1, \textcolor{keywordtype}{double} lon1,\textcolor{keywordtype}{double} lat2, \textcolor{keywordtype}{double} lon2);}
+\DoxyCodeLine{36     \textcolor{keywordtype}{void} bfs(\textcolor{keywordtype}{int} v);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_path_a23da922b8cc9eb8570dadae25df10c6f}{getClosestStop}}(\textcolor{keywordtype}{double} lat,\textcolor{keywordtype}{double} longi);}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41     \textcolor{keywordtype}{int} leastChangesPath();}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44 }
+\DoxyCodeLine{45 \};}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//AED\_PROJ2\_PATH\_H}}
+
+\end{DoxyCode}

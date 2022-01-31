@@ -1,0 +1,17 @@
+<map id="Menu::mainMenu" name="Menu::mainMenu">
+<area shape="rect" id="node1" title="função que inicia o menu é chamada no main.cpp" alt="" coords="5,132,128,159"/>
+<area shape="rect" id="node2" href="$class_menu.html#aad7f918a757c1921687ef8e041d3ff74" title=" " alt="" coords="373,5,496,32"/>
+<area shape="rect" id="node3" href="$class_menu.html#a158fee0af4db80ededfe539f516f4cf1" title="função que pede todos os inputs necessarios do utilizador e devolve o melhor caminho baseado nisso" alt="" coords="176,132,313,159"/>
+<area shape="rect" id="node4" href="$class_graph.html#aa5939d1f694f4cb00911f70b474b4dab" title="Usa o algoritmo de bfs para retornar um vetor com todas as paragens da paragem v a b sendo este camin..." alt="" coords="393,107,476,133"/>
+<area shape="rect" id="node5" href="$class_graph.html#af262e04ff1c8b75c720f6534fcb12b8d" title="Usa o algoritmo de dijkstra para retornar um vetor com todas as paragens da paragem v a b sendo este ..." alt="" coords="381,208,488,235"/>
+<area shape="rect" id="node7" href="$class_path.html#a23da922b8cc9eb8570dadae25df10c6f" title="Funcao que recebe coordenadas e devolve a paragem mais proxima dessas coordenadas." alt="" coords="361,259,508,285"/>
+<area shape="rect" id="node9" href="$class_path.html#a343c3786dc6760a33f65e25f59a39c81" title="Retorna a variavel mapStops." alt="" coords="556,132,691,159"/>
+<area shape="rect" id="node10" href="$class_graph.html#ac9480dae7745b203686ef78bc5e39691" title="Usa o algoritmo de dijkstra para retornar um vetor com todas as paragens da paragem v a b sendo este ..." alt="" coords="366,309,503,336"/>
+<area shape="rect" id="node12" href="$class_graph.html#ac23aec79c6fd1ae1417d1d6babc3cbf9" title="Usa o algoritmo de dijkstra para retornar um vetor com todas as paragens da paragem v a b sendo este ..." alt="" coords="371,56,499,83"/>
+<area shape="rect" id="node6" href="$class_graph.html#aaaaf7374e7a7f66ee5a4d787d66bda6e" title="Funca auxiliar que da sort um vetor pela ordem crescente da dist usada na funcao dijkstra." alt="" coords="557,208,689,235"/>
+<area shape="rect" id="node8" href="$class_path.html#a0b1c152f678fbdae81357a8df67dded4" title="Funçao com o algoritmo de haversine calcular a distancia entre dois pontos usando as suas latitudes e..." alt="" coords="568,259,679,285"/>
+<area shape="rect" id="node11" href="$class_graph.html#ad5e4b3b6e7c77e34554b826175b54de8" title="Funca auxiliar que da sort um vetor pondo primeiro os que tem a linha em comum com a sua origem usada..." alt="" coords="561,309,686,336"/>
+<area shape="rect" id="node13" href="$class_path.html#ac08733b5a925b22565b8fd6f8da2cc5f" title="Mapeia todas as paragens a um numero de identificacao usando um mapa." alt="" coords="570,19,677,45"/>
+<area shape="rect" id="node15" href="$class_graph.html#a24951f9276ce58e402658986148c4887" title="Funca auxiliar que da sort um vetor pondo primeiro os que tem a zona em comum com a sua origem usada ..." alt="" coords="557,69,689,96"/>
+<area shape="rect" id="node14" href="$class_path.html#af7c550cffaa44cede4dd8413b20b5239" title="Funcao auxiliar que recebe uma string e um char e divide a string num vetor de strings usando como di..." alt="" coords="739,19,853,45"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Graph::leastZones" name="Graph::leastZones">
+<area shape="rect" id="node1" title="Usa o algoritmo de dijkstra para retornar um vetor com todas as paragens da paragem v a b sendo este ..." alt="" coords="5,56,133,83"/>
+<area shape="rect" id="node2" href="$class_path.html#a343c3786dc6760a33f65e25f59a39c81" title="Retorna a variavel mapStops." alt="" coords="181,5,316,32"/>
+<area shape="rect" id="node3" href="$class_path.html#ac08733b5a925b22565b8fd6f8da2cc5f" title="Mapeia todas as paragens a um numero de identificacao usando um mapa." alt="" coords="195,56,302,83"/>
+<area shape="rect" id="node5" href="$class_graph.html#a24951f9276ce58e402658986148c4887" title="Funca auxiliar que da sort um vetor pondo primeiro os que tem a zona em comum com a sua origem usada ..." alt="" coords="183,107,315,133"/>
+<area shape="rect" id="node4" href="$class_path.html#af7c550cffaa44cede4dd8413b20b5239" title="Funcao auxiliar que recebe uma string e um char e divide a string num vetor de strings usando como di..." alt="" coords="364,56,479,83"/>
+</map>

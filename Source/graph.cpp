@@ -20,12 +20,6 @@ int Graph::graphSize() {
     return nodes.size();
 }
 
-int Graph::getEdge() {
-    //1176
-
-    return nodes.at(1176).adj.size();
-}
-
 vector<int> Graph::bfs(int v,int b) {
     for (int i=0; i<size; i++){
         nodes.at(i).visited = false;
@@ -194,7 +188,7 @@ vector<int> Graph::leastZones(int a, int b) {
         nodes.at(it.dest).zone = it.line;
     }
     while (!v.empty()){
-        v = sortVector(v);
+        v = sortVector3(v);
         nodes.at(v.at(0)).visited = true;
         for (auto &it : nodes.at(v.at(0)).adj){
             if (!nodes.at(it.dest).visited){

@@ -1,0 +1,4 @@
+<map id="Graph::dijkstra" name="Graph::dijkstra">
+<area shape="rect" id="node1" title="Usa o algoritmo de dijkstra para retornar um vetor com todas as paragens da paragem v a b sendo este ..." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$class_graph.html#aaaaf7374e7a7f66ee5a4d787d66bda6e" title="Funca auxiliar que da sort um vetor pela ordem crescente da dist usada na funcao dijkstra." alt="" coords="160,5,292,32"/>
+</map>

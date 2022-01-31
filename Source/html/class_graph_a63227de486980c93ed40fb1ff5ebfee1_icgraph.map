@@ -1,0 +1,5 @@
+<map id="Graph::addEdge" name="Graph::addEdge">
+<area shape="rect" id="node1" title="Adiciona uma edge ao grafo desde a source ate a destination, recebendo tambem que linha liga essas du..." alt="" coords="308,5,424,32"/>
+<area shape="rect" id="node2" href="$class_path.html#ad3b56a60dabdaa87703d632b380e708d" title="Constroi o grafo com todas as paragens e as suas ligações." alt="" coords="137,5,260,32"/>
+<area shape="rect" id="node3" href="$class_path.html#af26cfab021ddf49af73da3b2beca85ac" title="construtor do Path ativa as funcoes getGraph e mapping guardando os sues returns respetivamente nas v..." alt="" coords="5,5,89,32"/>
+</map>

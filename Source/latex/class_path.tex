@@ -1,0 +1,50 @@
+\hypertarget{class_path}{}\doxysection{Path Class Reference}
+\label{class_path}\index{Path@{Path}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_path_af26cfab021ddf49af73da3b2beca85ac}\label{class_path_af26cfab021ddf49af73da3b2beca85ac}} 
+{\bfseries Path} ()
+\begin{DoxyCompactList}\small\item\em construtor do \mbox{\hyperlink{class_path}{Path}} ativa as funcoes get\+Graph e mapping guardando os sues returns respetivamente nas variaveis map\+Stops e graph\+Stop \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_a805ffe78aed0d6c275f402b8379727e8}\label{class_path_a805ffe78aed0d6c275f402b8379727e8}} 
+\mbox{\hyperlink{class_graph}{Graph}} {\bfseries get\+Graph} ()
+\begin{DoxyCompactList}\small\item\em Retorna a variavel graph\+Stop. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_a343c3786dc6760a33f65e25f59a39c81}\label{class_path_a343c3786dc6760a33f65e25f59a39c81}} 
+map$<$ int, vector$<$ string $>$ $>$ {\bfseries get\+Map\+Stops} ()
+\begin{DoxyCompactList}\small\item\em Retorna a variavel map\+Stops. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_ad3b56a60dabdaa87703d632b380e708d}\label{class_path_ad3b56a60dabdaa87703d632b380e708d}} 
+\mbox{\hyperlink{class_graph}{Graph}} {\bfseries graph\+Stops} ()
+\begin{DoxyCompactList}\small\item\em Constroi o grafo com todas as paragens e as suas ligações. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_ac08733b5a925b22565b8fd6f8da2cc5f}\label{class_path_ac08733b5a925b22565b8fd6f8da2cc5f}} 
+void {\bfseries mapping} ()
+\begin{DoxyCompactList}\small\item\em Mapeia todas as paragens a um numero de identificacao usando um mapa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_ace42aec34a95562120643b30cca81ea3}\label{class_path_ace42aec34a95562120643b30cca81ea3}} 
+int {\bfseries get\+Map\+Size} ()
+\begin{DoxyCompactList}\small\item\em Retorna o tamanho do mapa. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_a818d2b46db7f7d590e2dc8fcf9b83f2a}\label{class_path_a818d2b46db7f7d590e2dc8fcf9b83f2a}} 
+vector$<$ string $>$ {\bfseries get\+Stop} (int n)
+\begin{DoxyCompactList}\small\item\em Retorna as informaçoes da paragem n num veto de strings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_af7c550cffaa44cede4dd8413b20b5239}\label{class_path_af7c550cffaa44cede4dd8413b20b5239}} 
+vector$<$ string $>$ {\bfseries string\+Split} (string n, char c)
+\begin{DoxyCompactList}\small\item\em Funcao auxiliar que recebe uma string e um char e divide a string num vetor de strings usando como divisoria o char. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_ac3e894652c088d17f13023a3c5663a9a}\label{class_path_ac3e894652c088d17f13023a3c5663a9a}} 
+void {\bfseries bfs} (int v)
+\item 
+\mbox{\Hypertarget{class_path_a23da922b8cc9eb8570dadae25df10c6f}\label{class_path_a23da922b8cc9eb8570dadae25df10c6f}} 
+string {\bfseries get\+Closest\+Stop} (double lat, double longi)
+\begin{DoxyCompactList}\small\item\em Funcao que recebe coordenadas e devolve a paragem mais proxima dessas coordenadas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_path_ad012f3ac4f886e10ea61beb97c74add2}\label{class_path_ad012f3ac4f886e10ea61beb97c74add2}} 
+int {\bfseries least\+Changes\+Path} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_path_a0b1c152f678fbdae81357a8df67dded4}\label{class_path_a0b1c152f678fbdae81357a8df67dded4}} 
+static double {\bfseries haversine} (double lat1, double lon1, double lat2, double lon2)
+\begin{DoxyCompactList}\small\item\em Funçao com o algoritmo de haversine calcular a distancia entre dois pontos usando as suas latitudes e longitudes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Path.\+h\item 
+Path.\+cpp\end{DoxyCompactItemize}

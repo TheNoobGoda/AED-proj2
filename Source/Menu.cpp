@@ -4,9 +4,7 @@ void Menu::mainMenu() {
     cout << "=====================================" << endl;
     cout << "               AED - G70             " << endl;
     cout << "=====================================" << endl;
-    cout << " [1] - Origem/Destino                " << endl;
-//    cout << " [2] - Escolha de melhor caminho     " << endl;
-//    cout << " [3] - Mudança de autocarro          " << endl;
+    cout << " [1] - Procurar caminho              " << endl;
     cout << " [2] - Sair                          " << endl;
     clearBuffer();
     cin >> choice;
