@@ -12,10 +12,10 @@
 
 class Path {
     map<int,vector<string>> mapStops;
-    static Graph graphStop;
+    Graph graphStop;
 
 public:
-    //Path();
+    Path();
     Graph getGraph();
     map<int,vector<string>> getMapStops();
     Graph graphStops();

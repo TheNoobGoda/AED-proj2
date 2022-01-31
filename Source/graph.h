@@ -25,6 +25,8 @@ class Graph {
         int origin;
         string line;
         bool lineb;
+        string zone;
+        bool zoneb;
         bool operator<(const Node node) const{
             if (this->dist==node.dist){
                 return true;
@@ -52,14 +54,21 @@ public:
     Graph(int nodes, bool dir = false);
     Graph()=default;
 
+    vector<Node> getNodes(){
+        return nodes;
+    }
+
     void addEdge(int src, int dest, string line, double weight = 1);
     int graphSize();
     int getEdge();
-    void bfs(int v);
-    int dijkstra(int a,int b);
-    int leastChange(int a,int b);
+    vector<int> bfs(int v,int b);
+    vector<int> dijkstra(int a,int b);
+    vector<int> leastChange(int a,int b);
+    vector<int> leastZones(int a,int b);
 
     vector<int> sortVector(vector<int> v);
+    vector<int> sortVector2(vector<int> v);
+    vector<int> sortVector3(vector<int> v);
 };
 
 

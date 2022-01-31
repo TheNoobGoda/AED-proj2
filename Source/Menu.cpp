@@ -5,12 +5,12 @@ void Menu::mainMenu() {
     cout << "               AED - G70             " << endl;
     cout << "=====================================" << endl;
     cout << " [1] - Origem/Destino                " << endl;
-    cout << " [2] - Escolha de melhor caminho     " << endl;
-    cout << " [3] - Mudança de autocarro          " << endl;
-    cout << " [4] - Sair                          " << endl;
+//    cout << " [2] - Escolha de melhor caminho     " << endl;
+//    cout << " [3] - Mudança de autocarro          " << endl;
+    cout << " [2] - Sair                          " << endl;
     clearBuffer();
     cin >> choice;
-    while(choice < 1 || choice > 4) {
+    while(choice < 1 || choice > 2) {
         cout << "Comando inexistente, usar um novo valor: "; clearBuffer(); cin >> choice;
     }
     switch(choice){
@@ -19,12 +19,14 @@ void Menu::mainMenu() {
             originDestiny();
             break;
         case 2:
-            choice = -1;
-            //bestPath();
+            cout << "Programa encerrado!" << endl;
             break;
-        case 3:
-            //busChange();
-            break;
+//            choice = -1;
+//            //bestPath();
+//            break;
+//        case 3:
+//            //busChange();
+//            break;
         default:
             cout << "Programa encerrado!" << endl;
             break;
@@ -46,7 +48,7 @@ void Menu::originDestiny() {
     cout << "               AED - G70             " << endl;
     cout << "=====================================" << endl;
     clearBuffer();
-    int opcao, opcao2;
+    int opcao, opcao2,num,num2;
     string codigo, codigo2;
     bool find = false, find2 = false;
     cout << "-----Deseja:-----\n  [1]-Indicar a paragem onde pretende apanhar o transporte.\n  [2]-Indicar a sua localizacao." << endl;
@@ -64,9 +66,11 @@ void Menu::originDestiny() {
         cin >> longitude;
         clearBuffer();
         string a = actualPath.getClosestStop(latitude, longitude);
+        codigo = a;
         for (int i = 0; i < actualPath.getMapStops().size(); i++) {
             if (actualPath.getMapStops().at(i).at(0) == a) {
                 cout << "Paragem mais proxima do local onde se encontra: " << a << " --> " << actualPath.getMapStops().at(i).at(1) << endl;
+                num = i;
                 break;
             }
         }
@@ -78,6 +82,7 @@ void Menu::originDestiny() {
         for (int i = 0; i < actualPath.getMapStops().size(); i++) {
             if (actualPath.getMapStops().at(i).at(0) == codigo) {
                 cout << "Escolheu a paragem " << codigo << " --> " << actualPath.getMapStops().at(i).at(1) << endl;
+                num = i;
                 find = true;
                 break;
             }
@@ -94,7 +99,7 @@ void Menu::originDestiny() {
     clearBuffer();
     cout << "-----Para onde deseja ir:-----\n  [1]-Inserir paragem.\n  [2]-Inserir localizacao do destino pretendido." << endl;
     cin >> opcao2;
-    while(opcao2 < 1 || opcao2 > 2) {
+    while(choice < 1 || choice > 2 || typeid(choice).name()!="i") {
         cout << "Comando inexistente, usar um novo valor: "; clearBuffer(); cin >> opcao2;
     }
     clearBuffer();
@@ -106,9 +111,11 @@ void Menu::originDestiny() {
         cin >> longitude2;
         clearBuffer();
         string b = actualPath.getClosestStop(latitude2, longitude2);
+        codigo2 = b;
         for (int i = 0; i < actualPath.getMapStops().size(); i++) {
             if (actualPath.getMapStops().at(i).at(0) == b) {
                 cout << "Paragem mais proxima do destino pretendido: " << b << " --> " << actualPath.getMapStops().at(i).at(1) << endl;
+                num2 = i;
                 break;
             }
         }
@@ -120,6 +127,7 @@ void Menu::originDestiny() {
         for (int i = 0; i < actualPath.getMapStops().size(); i++) {
             if (actualPath.getMapStops().at(i).at(0) == codigo2) {
                 cout << "Escolheu a paragem " << codigo2 << " --> " << actualPath.getMapStops().at(i).at(1) << endl;
+                num2 = i;
                 find2 = true;
                 break;
             }
@@ -133,6 +141,93 @@ void Menu::originDestiny() {
         cout << "Invalido." << endl;
         originDestiny();
     }
+    //parte diferente
+
+    cout << "=====================================" << endl;
+    cout << "               AED - G70             " << endl;
+    cout << "=====================================" << endl;
+    cout << " [1] - Menor numero de paragens      " << endl;
+    cout << " [2] - Menor distãncia               " << endl;
+    cout << " [3] - Menor mudanca de linhas       " << endl;
+    cout << " [4] - Menor mudanca de zonas        " << endl;
+    clearBuffer();
+    cin >> choice;
+    while(choice < 1 || choice > 3 || typeid(choice).name()!="i") {
+        cout << "Comando inexistente, usar um novo valor: ";
+        clearBuffer();
+        cin >> choice;
+    }
+    switch(choice){
+        case 1: {
+            choice = -1;
+            string str;
+            vector<int> v = grafo.bfs(num, num2);
+            if (v.size() == 1){
+                str = "Não existe um caminho possivel entre essas duas paragens";
+            }else {
+                str = "Tem que ir pelas segintes paragens: " + codigo;
+                for (int i = v.size() - 1; i >= 0; i--) {
+                    str += " " + actualPath.getMapStops().at(i).at(0);
+                }
+                str += " "+codigo2;
+            }
+            cout << str << endl;
+            break;
+        }
+        case 2: {
+            choice = -1;
+            string str;
+            vector<int> v = grafo.dijkstra(num, num2);
+            if (v.size() == 1) {
+                str = "Não existe um caminho possivel entre essas duas paragens";
+            } else {
+                str = "Tem que ir pelas segintes paragens: " + codigo;
+                for (int i = v.size() - 1; i >= 0; i--) {
+                    str += " " + actualPath.getMapStops().at(i).at(0);
+                }
+                str += " "+codigo2;
+            }
+            cout << str << endl;
+            break;
+        }
+        case 3:{
+            choice = -1;
+            string str;
+            vector<int> v = grafo.leastChange(num, num2);
+            if (v.size() == 1) {
+                str = "Não existe um caminho possivel entre essas duas paragens";
+            } else {
+                str = "Tem que ir pelas segintes paragens: " + codigo;
+                for (int i = v.size() - 1; i >= 0; i--) {
+                    str += " " + actualPath.getMapStops().at(i).at(0);
+                }
+                str += " "+codigo2;
+            }
+            cout << str << endl;
+            break;
+        }
+        case 4 :{
+            choice = -1;
+            string str;
+            vector<int> v = grafo.leastZones(num, num2);
+            if (v.size() == 1) {
+                str = "Não existe um caminho possivel entre essas duas paragens";
+            } else {
+                str = "Tem que ir pelas segintes paragens: " + codigo;
+                for (int i = v.size() - 1; i >= 0; i--) {
+                    str += " " + actualPath.getMapStops().at(i).at(0);
+                }
+                str += " "+codigo2;
+            }
+            cout << str << endl;
+            break;
+        }
+        default:
+            choice = -1;
+            mainMenu();
+            break;
+    }
+
     mainMenu();
 }
 
@@ -151,7 +246,7 @@ void Menu::bestPath() {
     switch(choice){
         case 1:
             choice = -1;
-            grafo.bfs()
+            //grafo.bfs(21);
             break;
         case 2:
             choice = -1;

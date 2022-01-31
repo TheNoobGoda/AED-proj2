@@ -10,10 +10,10 @@
 
 using namespace std;
 
-//Path::Path() {
-//    //this->graphStop = graphStops();
-//    mapping();
-//}
+Path::Path() {
+    mapping();
+    this->graphStop = graphStops();
+}
 
 Graph Path::graphStops() {
 
@@ -22,6 +22,12 @@ Graph Path::graphStops() {
     int src;
     int dest;
 
+//    stops.addEdge(0,2351,"200_1");
+//    stops.addEdge(0,2356,"201_1");
+//    stops.addEdge(0,2356,"208_1");
+//    stops.addEdge(0,2356,"501_1");
+//    stops.addEdge(0,2351,"703_0");
+//    stops.addEdge(0,1044,"703_1");
     for (int i =0;i<999;i++){
         string filename ="../Source/dataset/line_"+ to_string(i)+"_0.csv";
         ifstream f(filename);
@@ -743,12 +749,30 @@ Graph Path::graphStops() {
         f.close();
 
     }
+//    for (int i= 0;i<stops.getNodes().size()-1;i++){
+//        cout << "yes";
+//        for (int j = 0;j<i;j++){
+//            double weight = haversine(atof(mapStops.at(i).at(3).c_str()),atof(mapStops.at(i).at(4).c_str()),atof(mapStops.at(j).at(3).c_str()),atof(mapStops.at(j).at(4).c_str()));
+//            if (weight<0.2){
+//                stops.addEdge(i,j,"walk",weight);
+//            }
+//        }
+//        for (int j = i+1;j<stops.getNodes().size()-1;j++){
+//            double weight = haversine(atof(mapStops.at(i).at(3).c_str()),atof(mapStops.at(i).at(4).c_str()),atof(mapStops.at(j).at(3).c_str()),atof(mapStops.at(j).at(4).c_str()));
+//            if (weight<0.2){
+//                stops.addEdge(i,j,"walk",weight);
+//            }
+//        }
+//    }
+
+
+
 
     return stops;
 }
 
 Graph Path::getGraph() {
-    return graphStops();
+    return graphStop;
 }
 
 void Path::mapping() {
@@ -834,10 +858,10 @@ string Path::getClosestStop(double lat, double longi) {
     return mapStops.at(n).at(0);
 }
 
-int Path::leastChangesPath() {
-    mapping();
-    Graph stops = graphStops();
-    for (int i=0;i<stops.graphSize();i++){
-
-    }
-}
+//int Path::leastChangesPath() {
+//    mapping();
+//    Graph stops = graphStops();
+//    for (int i=0;i<stops.graphSize();i++){
+//
+//    }
+//}
